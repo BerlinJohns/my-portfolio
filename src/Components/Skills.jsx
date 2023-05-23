@@ -1,0 +1,122 @@
+import React from 'react';
+import {Typography} from '@mui/material';
+import { makeStyles} from '@mui/styles';
+import {Box} from '@mui/system';
+import Grid from '@mui/material/Grid';
+import {FaFreeCodeCamp,FaReact,FaNodeJs,FaLinux,FaGitAlt} from 'react-icons/fa';
+import {GrGraphQl,GrMysql} from 'react-icons/gr';
+import {SiMongodb,SiMaterialui,SiHackerone} from 'react-icons/si';
+import { useState } from 'react';
+
+
+const useStyles=makeStyles((theme)=>({
+  list:{
+     
+      
+  },
+  
+}));
+const skillList=[
+  {
+    id:1,
+    name: "React",
+    icon: <FaReact/>
+
+  },
+  { 
+    id:2,
+    name: "Node.js",
+    icon: <FaNodeJs/>
+
+  },
+  {
+    id:3,    
+    name: "GrapQL",
+    icon: <GrGraphQl/>
+
+  },
+  {
+    id:4,
+    name: "Linux",
+    icon: <FaLinux/>
+  },
+  {
+    id:5,
+    name: "React",
+    icon: <FaReact/>
+
+  },
+  {
+    id:6,
+    name:"Version Control",
+    icon:<FaGitAlt/>
+  },
+  {
+    id:7,
+    name: "Data Base",
+    icon: <GrMysql/>,
+    icon2: <SiMongodb/>
+
+  },
+  {
+    id:8,
+    name:"Bootstrap , MUI",
+    icon:<SiMaterialui/>
+  },
+  { 
+    id:9,
+    name:"Web Application Penetration Testing",
+    icon:<SiHackerone/>
+  }
+]
+export function Skills() {
+    const [skills]=useState(skillList);
+    const classes=useStyles();
+    
+    return (
+        <>
+        <Box sx={{ backgroundColor:'#111'}}>
+          <Typography component="h1" 
+          sx={{
+              paddingTop:9,
+              color:'#008FFF',
+              width:'100%',
+              textAlign:'center',
+              fontSize:{
+                xs:25,
+                sm:35,
+               
+              }
+             
+        }}>
+              My Skill Sets
+          </Typography>
+          <Grid container>
+              <Grid item xs={10} marginX="auto" marginY="3em" alignContent="center"> 
+                <Typography xs={{
+                  marginY:'1em !important',
+                }} color="#C786FF" 
+                component="ul" 
+                style ={{listStyle:'none'}}>
+                    
+                   { skills.map((link) => {
+                     
+                    return(
+                      <Typography key={link.id} component="li" sx={{fontSize:{xs:18,sm:22},marginTop:5}} className={classes.list}>
+                     <FaFreeCodeCamp color='#008FFF'/> &nbsp; &nbsp; {link.name} &nbsp;{link.icon}
+                     </Typography>
+                     )})
+                    }
+                
+                  
+                </Typography>
+              
+
+           </Grid >
+          </Grid>
+        </Box>
+        </>
+    )
+}
+
+

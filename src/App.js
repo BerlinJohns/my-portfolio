@@ -1,27 +1,61 @@
-import { Navbar } from "./Components/navbar";
+import { Navbar } from "./Components/Navbar";
 import {Home} from "./Components/Home";
+import { About } from "./Components/About";
+import {Footer} from "./Components/Footer";
+import {Skills} from "./Components/Skills";
 import { ThemeProvider, createTheme, makeStyles } from '@mui/material/styles';
+import './App.css';
 
-const theme=createTheme({
+
+
+
+
+export const theme=createTheme({
+  
   palette:{
     primary:{
-      main:"#FF5EBA" //pink
+      main:"#FF5EBA", //pink
+      
     },
     secondary:{
       main:"#008FFF"//blue
     },
     success:{
-      main:"#111"  
-    }
-  }
+      main:"#C786FF"  
+    },
+    background:{
+      default:"111",
+    },
+    info:{
+        main:"#111"
+    },
+   
+   
+
+
+  },
+  typography:{
+    fontFamily:"Poppins ,Ubunt",
+    fontWeightLight:'400',
+    fontWeightMedium:'500',
+    fontWeightBold:'700',
+    
+    
+  },
 })
 function App() {
   return (
+    
     <ThemeProvider theme={theme}>
-   <div>
-     < Navbar/>
-     <Home/>
-   </div>
+      <div className="scrollPath"></div>
+    <div >
+        <Navbar/>
+        <Home/>
+        <About/>
+        <Skills/>
+        <Footer/>
+      </div>
+   
    </ThemeProvider>
   );
 }
