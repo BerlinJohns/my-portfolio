@@ -1,1 +1,0 @@
-This is my React Portfolio site. I continuously improve it.
