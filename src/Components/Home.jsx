@@ -52,7 +52,7 @@ const useStyles =makeStyles((theme)=>({
 Smprofile:{
   width:'10rem',
   borderRadius:'50%',
-  border: '4px solid #008FFF',
+  border: '4px solid  #008FFF',
   
   
 },

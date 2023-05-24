@@ -122,7 +122,7 @@ export function About() {
                            xs:3,
                            },
                            fontSize:{
-                            xs:20,
+                            xs:25,
                             sm:40,
                             md:35,
                             lg:"4.2rem"
@@ -133,10 +133,17 @@ export function About() {
                     }}
                     >Berlin Johns.M </Typography>
                     
-                    I am a self-taught developer and designer who has learned 
+                   <Typography
+                   sx={{
+                    lineHeight:{
+                        sm:4
+                    }
+                   }}>
+                   I am a self-taught developer and designer who has learned 
                     coding since the lockdown period of 2020.
                     Now I'm developing modern web applications and mobile application as a fresher to
                     showcase my abilities.
+                   </Typography>
                   
                     </Typography>
                 </Grid>

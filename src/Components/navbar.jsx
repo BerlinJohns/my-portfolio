@@ -65,8 +65,8 @@ export function Navbar(){
     }}>
     <Typography sx={{
        fontSize:{
-         xs:16,
-         sm:16,
+         xs:8,
+         sm:10,
          md:16,
          lg:16
 

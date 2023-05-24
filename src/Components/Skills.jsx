@@ -53,9 +53,9 @@ const skillList=[
   },
   {
     id:7,
-    name: "Data Bases ",
-    icon: <GrMysql/>,
-    icon2: <SiMongodb/>
+    name: "SQL/NoSQL",
+    icon2: <GrMysql/>,
+    icon: <SiMongodb/>
 
   },
   {
