@@ -3,7 +3,7 @@ import {Home} from "./Components/Home";
 import { About } from "./Components/About";
 import {Footer} from "./Components/Footer";
 import {Skills} from "./Components/Skills";
-import { ThemeProvider, createTheme, makeStyles } from '@mui/material/styles';
+import { ThemeProvider, createTheme} from '@mui/material/styles';
 import './App.css';
 
 

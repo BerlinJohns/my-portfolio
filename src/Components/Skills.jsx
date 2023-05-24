@@ -4,8 +4,8 @@ import { makeStyles} from '@mui/styles';
 import {Box} from '@mui/system';
 import Grid from '@mui/material/Grid';
 import {FaFreeCodeCamp,FaReact,FaNodeJs,FaLinux,FaGitAlt} from 'react-icons/fa';
-import {GrGraphQl,GrMysql} from 'react-icons/gr';
-import {SiMongodb,SiMaterialui,SiHackerone} from 'react-icons/si';
+import {GrMysql} from 'react-icons/gr';
+import {SiMongodb,SiMaterialui,SiOwasp,SiFastapi} from 'react-icons/si';
 import { useState } from 'react';
 
 
@@ -31,8 +31,8 @@ const skillList=[
   },
   {
     id:3,    
-    name: "GrapQL",
-    icon: <GrGraphQl/>
+    name:"React Native",
+    icon: <FaReact/>
 
   },
   {
@@ -42,8 +42,8 @@ const skillList=[
   },
   {
     id:5,
-    name: "React",
-    icon: <FaReact/>
+    name: "Python FastApi",
+    icon: <SiFastapi/>
 
   },
   {
@@ -53,7 +53,7 @@ const skillList=[
   },
   {
     id:7,
-    name: "Data Base",
+    name: "Data Bases ",
     icon: <GrMysql/>,
     icon2: <SiMongodb/>
 
@@ -65,8 +65,8 @@ const skillList=[
   },
   { 
     id:9,
-    name:"Web Application Penetration Testing",
-    icon:<SiHackerone/>
+    name:"Security Testing",
+    icon:<SiOwasp/>
   }
 ]
 export function Skills() {

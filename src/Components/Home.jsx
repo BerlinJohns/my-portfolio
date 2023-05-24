@@ -1,34 +1,35 @@
-import {React,useState} from 'react';
+import {React} from 'react';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import { makeStyles } from "@mui/styles";
 import { Box } from '@mui/system';
-import styled from '@emotion/styled';
-import TextField from '@mui/material/TextField';
+import { Button } from '@mui/material';
+// import styled from '@emotion/styled';
+// import TextField from '@mui/material/TextField';
 import Smprofile from '../Media/Smportfoliodp.jpeg';
 import Bgprofile from '../Media/profile.bmp';
 import Hidden from '@mui/material/Hidden';
 
 
-const CssTextField = styled(TextField)({
-  '& label.Mui-focused': {
-    color: 'primary',
-  },
-  '& .MuiInput-underline:after': {
-    borderBottomColor: '#FF5EBA',
-  },
-  '& .MuiOutlinedInput-root': {
-    '& fieldset': {
-      borderColor: '#008FFF',
-    },
-    '&:hover fieldset': {
-      borderColor: '#FF5EBA',
-    },
-    '&.Mui-focused fieldset': {
-      borderColor: '#FF5EBA',
-    },
-  },
-});
+// const CssTextField = styled(TextField)({
+//   '& label.Mui-focused': {
+//     color: 'primary',
+//   },
+//   '& .MuiInput-underline:after': {
+//     borderBottomColor: '#FF5EBA',
+//   },
+//   '& .MuiOutlinedInput-root': {
+//     '& fieldset': {
+//       borderColor: '#008FFF',
+//     },
+//     '&:hover fieldset': {
+//       borderColor: '#FF5EBA',
+//     },
+//     '&.Mui-focused fieldset': {
+//       borderColor: '#FF5EBA',
+//     },
+//   },
+// });
 
 const useStyles =makeStyles((theme)=>({
 
@@ -51,6 +52,7 @@ const useStyles =makeStyles((theme)=>({
 Smprofile:{
   width:'10rem',
   borderRadius:'50%',
+  border: '4px solid #008FFF',
   
   
 },
@@ -70,6 +72,9 @@ profile_warrper:{
 }
 
 }));
+const handleButtonClick = () => {
+  window.open('https://www.linkedin.com/in/berlinjohns', '_blank',"noopener noreferrer");
+};
 export function Home() {
   const classes=useStyles();
   
@@ -156,7 +161,17 @@ export function Home() {
                  >
                    As a web designer and 
                    developer, I help you create online assets for your business.
+                   
                  </Typography>
+                  <Button
+                   onClick={handleButtonClick}
+                 sx={{
+                  backgroundColor:"white",
+                  color:"#008FFF"
+                 }}>
+                      Hire Me
+                  </Button>
+                
              </Grid>
              <Hidden smDown>
              <Grid item lg={4} md={3} sm={12}>

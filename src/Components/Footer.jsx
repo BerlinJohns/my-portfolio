@@ -48,11 +48,18 @@ export function Footer() {
            marginBottom:5,
          }}
           > 
-              <a href="https://www.instagram.com/b_e_r_l_i_n_b_i_b_i_n/" target="_blank" rel="noopener noreferrer"><BsInstagram  className={classes.icons} /></a>
-            
-            <BsLinkedin  className={classes.icons} />
+              <a href="https://www.instagram.com/b_e_r_l_i_n_b_i_b_i_n/" target="_blank" rel="noopener noreferrer">
+              <BsInstagram  className={classes.icons} /></a>
+            <a href="www.linkedin.com/in/berlinjohns" target="_blank" rel="noopener noreferrer">
+               <BsLinkedin  className={classes.icons} />
+            </a>
+            <a href="https://twitter.com/BerlinJohnes" target="_blank" rel="noopener noreferrer">
             <BsTwitter  className={classes.icons} />
+            </a>
+           <a href="https://github.com/BerlinJohns" target="_blank" rel="noopener noreferrer">
             <BsGithub  className={classes.icons} /> 
+           </a>
+            
             </Grid>  
             <Grid item xs="auto" sx={{
              marginX:"auto"

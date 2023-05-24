@@ -2,7 +2,6 @@ import React from "react";
 import { Typography } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import { makeStyles } from "@mui/styles";
-import { display, lineHeight } from "@mui/system";
 import { Box } from "@mui/system";
 import Showcase from "../Media/showcase.svg";
 import Reveal from 'react-reveal/Reveal';
@@ -45,7 +44,7 @@ export function About() {
              className={classes.heading}
              sx={{
                 pt:{
-                    xs:5,
+                    xs:24,
                     sm:4,
                     md:1,
                     lg:3,
@@ -136,14 +135,14 @@ export function About() {
                     
                     I am a self-taught developer and designer who has learned 
                     coding since the lockdown period of 2020.
-                    Now I'm developing modern web applications as a fresher to
+                    Now I'm developing modern web applications and mobile application as a fresher to
                     showcase my abilities.
                   
                     </Typography>
                 </Grid>
                 <Grid item xs={10} sm={12} md={6} lg={5}>
                  
-                     <img src={Showcase} className={classes.Showcase}
+                     <img src={Showcase} className={classes.Showcase} alt="showcase"
                      />
                   
                 </Grid>    
