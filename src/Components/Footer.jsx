@@ -3,8 +3,11 @@ import Grid from '@mui/material/Grid';
 import { Typography } from '@mui/material';
 import {BsInstagram, BsLinkedin,BsTwitter,BsGithub,BsTelephoneForward,BsFillEnvelopeFill} from 'react-icons/bs';
 import { makeStyles } from "@mui/styles";
- 
+
+
 const date=new Date().getFullYear()
+
+
 
  const useStyles=makeStyles((theme)=>({
   heading:{
@@ -28,6 +31,16 @@ const date=new Date().getFullYear()
 
 }));
 
+
+  const handleEmailClick = () => {
+    window.location.href = 'mailto:berlinjohns78@gmail.com';
+  };
+  const handlePhoneClick = () => {
+    window.location.href = 'tel:9629802155';
+  };
+
+
+
 export function Footer() {
   const classes=useStyles();
     return (
@@ -50,7 +63,7 @@ export function Footer() {
           > 
               <a href="https://www.instagram.com/b_e_r_l_i_n_b_i_b_i_n/" target="_blank" rel="noopener noreferrer">
               <BsInstagram  className={classes.icons} /></a>
-            <a href="www.linkedin.com/in/berlinjohns" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/berlinjohns" target="_blank" rel="noopener noreferrer">
                <BsLinkedin  className={classes.icons} />
             </a>
             <a href="https://twitter.com/BerlinJohnes" target="_blank" rel="noopener noreferrer">
@@ -62,18 +75,26 @@ export function Footer() {
             
             </Grid>  
             <Grid item xs="auto" sx={{
-             marginX:"auto"
+            marginX:"auto",
              
             }}>
-              <Typography varient="h3" component="p" color="#C786FF"  >
-              <BsFillEnvelopeFill/>  &nbsp; &nbsp;  berlinjohns78@gmail.com
+              <Typography  component="p" 
+              style={{ 
+                color: '#C786FF',
+                cursor:'pointer',
+                 }}>
+               <span style={{ display: 'flex', alignItems: 'center' }} onClick={handleEmailClick}>
+                  <BsFillEnvelopeFill />
+                  <span style={{ marginLeft: '5px' }}>berlinjohns78@gmail.com</span>
+              </span>
               </Typography>
               <Typography varient="h1" component="p" color="#C786FF" 
+              onClick={handlePhoneClick}
                sx={{
                 marginTop:2,
-               
+                cursor:'pointer'
               }}>
-                  <BsTelephoneForward /> &nbsp; &nbsp;   9629802155
+                  <BsTelephoneForward /> &nbsp; &nbsp;  +91 9629802155
               </Typography>
             </Grid> 
            
