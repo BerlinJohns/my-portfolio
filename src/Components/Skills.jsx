@@ -5,10 +5,9 @@ import {Box} from '@mui/system';
 import Grid from '@mui/material/Grid';
 import {FaFreeCodeCamp,FaReact,FaNodeJs,FaLinux,FaGitAlt} from 'react-icons/fa';
 import {GrMysql} from 'react-icons/gr';
-import {SiMongodb,SiMaterialui,SiOwasp,SiFastapi} from 'react-icons/si';
+import {SiMongodb,SiMaterialui,SiOwasp,SiFastapi,} from 'react-icons/si';
 import { useState } from 'react';
-
-
+import { FaAngular } from "react-icons/fa";
 const useStyles=makeStyles((theme)=>({
   list:{
      
@@ -17,6 +16,11 @@ const useStyles=makeStyles((theme)=>({
   
 }));
 const skillList=[
+  {
+    id:0,
+    name:"Angular",
+    icon:<FaAngular/>
+  },
   {
     id:1,
     name: "React",
