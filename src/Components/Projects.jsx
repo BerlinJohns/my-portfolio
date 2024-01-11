@@ -6,10 +6,15 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Grid from '@mui/material/Grid';
+import ReactGA from "react-ga4";
 
 function Projects() {
   const openAliya = () => {
     window.open('https://aliyaservice.netlify.app/', '_blank');
+    ReactGA.event({
+      category: 'Button Click',
+      action: 'Clicked Aliya Project',
+    });
   };
   return (
     <>

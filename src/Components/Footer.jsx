@@ -3,7 +3,7 @@ import Grid from '@mui/material/Grid';
 import { Typography } from '@mui/material';
 import {BsInstagram, BsLinkedin,BsTwitter,BsGithub,BsTelephoneForward,BsFillEnvelopeFill} from 'react-icons/bs';
 import { makeStyles } from "@mui/styles";
-
+import ReactGA from "react-ga4";
 
 const date=new Date().getFullYear()
 
@@ -34,9 +34,17 @@ const date=new Date().getFullYear()
 
   const handleEmailClick = () => {
     window.location.href = 'mailto:berlinjohns78@gmail.com';
+    ReactGA.event({
+      category: 'Button Click',
+      action: 'Clicked the Mail',
+    });
   };
   const handlePhoneClick = () => {
     window.location.href = 'tel:9629802155';
+    ReactGA.event({
+      category: 'Button Click',
+      action: 'Clicked the Contact',
+    });
   };
 
 

@@ -4,13 +4,22 @@ import { About } from "./Components/About";
 import {Footer} from "./Components/Footer";
 import {Skills} from "./Components/Skills";
 import { ThemeProvider, createTheme} from '@mui/material/styles';
-import './App.css';
 import Projects from "./Components/Projects";
+import ReactGA from "react-ga4";
+import './App.css';
 
 
 
 
 
+
+ReactGA.initialize("G-WBSZ93M7FY");
+ReactGA.send({
+   hitType: "pageview", 
+   page:window.location.pathname, 
+    });
+
+    
 export const theme=createTheme({
   
   palette:{
