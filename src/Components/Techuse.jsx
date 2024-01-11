@@ -52,7 +52,7 @@ function Techuse() {
         }}>
              <Typography
             component="h3"
-            varient="h3"
+            variant="h3"
             color="secondary"
             className={classes.heading}
             sx={{

@@ -5,6 +5,7 @@ import {Footer} from "./Components/Footer";
 import {Skills} from "./Components/Skills";
 import { ThemeProvider, createTheme} from '@mui/material/styles';
 import './App.css';
+import Projects from "./Components/Projects";
 
 
 
@@ -52,6 +53,7 @@ function App() {
         <Navbar/>
         <Home/>
         <About/>
+        <Projects/>
         <Skills/>
         <Footer/>
       </div>

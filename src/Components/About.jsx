@@ -139,7 +139,7 @@ export function About() {
                         sm:4
                     }
                    }}>
-                  I am a self-taught developer and designer who embarked on my coding journey during the lockdown period of 2020. With one year of hands-on experience, I am proficient in developing modern web and mobile applications, showcasing my evolving skills in both development and design.
+                    I am a self-taught developer and designer who embarked on my coding journey during the lockdown period of 2020.  I am proficient at developing modern web and mobile applications, showcasing my evolving skills in both development and design.
                    </Typography>
                   
                     </Typography>
