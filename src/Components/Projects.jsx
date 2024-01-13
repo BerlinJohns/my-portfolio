@@ -8,6 +8,10 @@ import CardMedia from '@mui/material/CardMedia';
 import Grid from '@mui/material/Grid';
 import ReactGA from "react-ga4";
 
+import { SiNestjs,SiTailwindcss,SiMongodb,SiExpress,SiTypescript } from "react-icons/si";
+import { FaAngular } from "react-icons/fa";
+
+
 function Projects() {
   const openAliya = () => {
     window.open('https://aliyaservice.netlify.app/', '_blank');
@@ -80,6 +84,41 @@ sx={{ maxWidth: 345,
           }}
           >
           It's a simple web application created for service showcase and collect home appliance reapring from clients.
+
+         <Typography variant='h6'
+         
+         sx={{
+          color:'#008FFF',
+          fontSize:{
+            xs:10,
+            md:13
+          },
+        }}
+        >
+          Tech stack:
+          {' '} 
+
+  <span style={{ color: '#FF31D8' }}>
+    <FaAngular />
+  </span>
+  {' '}
+   <span style={{ color: '#38BDF8' }}>
+     <SiTailwindcss/>
+  </span>
+   {' '}
+  <span style={{ color: '#E0234E' }}>
+    <SiNestjs />
+  </span>
+  {' '}
+   <span style={{ color: '#00ED64' }}>
+    <SiMongodb />
+  </span>
+  
+
+ 
+ 
+  
+         </Typography>
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -121,7 +160,46 @@ sx={{ maxWidth: 345,
           }}
           >
             Under Construction..
+            
+      
           </Typography>
+             <Typography variant='h6'
+         
+         sx={{
+          color:'#008FFF',
+          fontSize:{
+            xs:10,
+            md:13
+          },
+          paddingTop:{
+           xs:4,
+           md: 3.5
+          },
+        }}
+        >
+          Tech stack:
+          {' '} 
+
+  <span style={{ color: '#FF31D8' }}>
+    <FaAngular />
+  </span>
+  {' '}
+   <span style={{ color: '#38BDF8' }}>
+     <SiTailwindcss/>
+  </span>
+   {' '}
+  <span style={{ color: '#fff' }}>
+    <SiExpress />
+  </span>
+ {' '}
+  <span style={{ color: '#007BCD' }}>
+    <SiTypescript />
+  </span>
+  {' '}
+   <span style={{ color: '#00ED64' }}>
+    <SiMongodb />
+  </span>
+         </Typography>
         </CardContent>
       </CardActionArea>
     </Card>

@@ -4,32 +4,12 @@ import Typography from '@mui/material/Typography';
 import { makeStyles } from "@mui/styles";
 import { Box } from '@mui/system';
 import { Button } from '@mui/material';
-// import styled from '@emotion/styled';
-// import TextField from '@mui/material/TextField';
 import Smprofile from '../Media/Smportfoliodp.jpeg';
 import Bgprofile from '../Media/profile.bmp';
 import Hidden from '@mui/material/Hidden';
 
 
-// const CssTextField = styled(TextField)({
-//   '& label.Mui-focused': {
-//     color: 'primary',
-//   },
-//   '& .MuiInput-underline:after': {
-//     borderBottomColor: '#FF5EBA',
-//   },
-//   '& .MuiOutlinedInput-root': {
-//     '& fieldset': {
-//       borderColor: '#008FFF',
-//     },
-//     '&:hover fieldset': {
-//       borderColor: '#FF5EBA',
-//     },
-//     '&.Mui-focused fieldset': {
-//       borderColor: '#FF5EBA',
-//     },
-//   },
-// });
+
 
 const useStyles =makeStyles((theme)=>({
 
@@ -152,6 +132,7 @@ export function Home() {
                     lg:'5rem',
 
                   } , 
+                 
                   },
                   fontWeight:"600",
                   minWidth:"80%",
