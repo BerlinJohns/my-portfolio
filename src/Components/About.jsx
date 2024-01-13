@@ -44,10 +44,8 @@ export function About() {
              className={classes.heading}
              sx={{
                 pt:{
-                    xs:23,
-                    sm:4,
-                    md:1,
-                    lg:3,
+                    xs:3,
+                    
                 },
                  mb:{
                      xs:1,

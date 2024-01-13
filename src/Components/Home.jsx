@@ -67,9 +67,9 @@ export function Home() {
           sx={{
             backgroundColor:"#111",
             height:{
-              xs:"55vh",
-              sm:"60vh",
-              md:"85vh",
+              xs:"100vh",
+              sm:"100h",
+              md:"100vh",
               lg:"100vh",
             },
           }}
@@ -81,9 +81,11 @@ export function Home() {
           display="flex"
           alignItems="center"
           justifyContent="center"
-          marginTop="5em"
-         
-           xs={12}>
+          sx={{
+            marginTop:22
+          }}
+        
+          xs={12}>
                 
           <img  src={Smprofile} alt="Berlin_Johns_Portfolio" className={classes.Smprofile}/>
                 
