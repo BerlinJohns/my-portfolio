@@ -5,7 +5,6 @@ import { makeStyles } from "@mui/styles";
 import { Box } from '@mui/system';
 import { Button } from '@mui/material';
 import Smprofile from '../Media/Smportfoliodp.jpeg';
-import Bgprofile from '../Media/profile.bmp';
 import Hidden from '@mui/material/Hidden';
 
 
@@ -38,9 +37,9 @@ Smprofile:{
 },
 profile:{
   width:'20rem' ,
-  border:'4',
-  padding:'2em'
-  
+  border: '2px solid   #008FFF',
+  borderRadius:14,
+   boxShadow: '0px 1px 0px  #008FFF',
   
  
 },
@@ -143,7 +142,7 @@ export function Home() {
                  className={classes.title}
                  >
                    As a web designer and 
-                   developer, I help you create online assets for your business.
+                   developer, I craft a online assets for your business.
                    
                  </Typography>
                   <Button
@@ -159,11 +158,14 @@ export function Home() {
              <Hidden smDown>
              <Grid item lg={4} md={3} sm={12}>
              <Box sx={{
+              
                paddingTop:{
                 md:'6em'
                }
              }} className={classes.profile_warrper}>
-                  <img src={Bgprofile} className={classes.profile} alt="Profile" />
+                  <img
+                  
+                  src="https://ucarecdn.com/f201e8ad-dbbb-4748-992f-ac2cba28d9cf/WhatsAppImage20240118at105157AM.jpeg" className={classes.profile} alt="Profile" />
              </Box>
              </Grid>
              </Hidden>
