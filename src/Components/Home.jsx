@@ -141,8 +141,7 @@ export function Home() {
                  }}
                  className={classes.title}
                  >
-                   As a web designer and 
-                   developer, I craft a online assets for your business.
+                   As a web designer and developer, I craft online assets for your business.
                    
                  </Typography>
                   <Button
