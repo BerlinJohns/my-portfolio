@@ -136,7 +136,7 @@ sx={{ maxWidth: 345,
         <CardMedia
           component="img"
           height="150"
-          image="https://ucarecdn.com/50986eb2-40e7-4209-a7c5-d7e1ddc6b3ca/-/preview/500x500/-/quality/smart_retina/-/format/auto/"
+          image="https://ucarecdn.com/398127ea-ef87-48b8-b877-b3fc7416aab1/-/preview/1000x491/"
           alt="deploy soon...."
         />
         <CardContent >
@@ -149,7 +149,7 @@ sx={{ maxWidth: 345,
           }}
           >
             Pets Zone
-          </Typography>
+          </Typography> 
           <Typography  color="text.secondary"
           sx={{
             color:'#C786FF',
