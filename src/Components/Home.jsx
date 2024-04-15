@@ -4,7 +4,8 @@ import Typography from '@mui/material/Typography';
 import { makeStyles } from "@mui/styles";
 import { Box } from '@mui/system';
 import { Button } from '@mui/material';
-import Smprofile from '../Media/Smportfoliodp.jpeg';
+import Smprofile from '../Media/profile.png';
+import LgProfile from '../Media/profile-lg.png'
 import Hidden from '@mui/material/Hidden';
 
 
@@ -37,9 +38,9 @@ Smprofile:{
 },
 profile:{
   width:'20rem' ,
-  border: '2px solid   #008FFF',
+ 
   borderRadius:14,
-   boxShadow: '0px 1px 0px  #008FFF',
+  
   
  
 },
@@ -157,14 +158,15 @@ export function Home() {
              <Hidden smDown>
              <Grid item lg={4} md={3} sm={12}>
              <Box sx={{
-              
+               
+
                paddingTop:{
-                md:'6em'
+                md:'9em'
                }
              }} className={classes.profile_warrper}>
                   <img
                   
-                  src="https://ucarecdn.com/f201e8ad-dbbb-4748-992f-ac2cba28d9cf/WhatsAppImage20240118at105157AM.jpeg" className={classes.profile} alt="Profile" />
+                  src={LgProfile} className={classes.profile} alt="Profile" />
              </Box>
              </Grid>
              </Hidden>
