@@ -7,6 +7,7 @@ import { Button } from '@mui/material';
 import Smprofile from '../Media/profile.png';
 import LgProfile from '../Media/profile-lg.png'
 import Hidden from '@mui/material/Hidden';
+import ReactGA from "react-ga4";
 
 
 
@@ -52,8 +53,12 @@ profile_warrper:{
 }
 
 }));
-const handleButtonClick = () => {
+const hireMe = () => {
   window.open('https://www.linkedin.com/in/berlinjohns', '_blank',"noopener noreferrer");
+  ReactGA.event({
+    category: 'Button Click',
+    action: 'Clicked Hire Me Button',
+  });
 };
 export function Home() {
   const classes=useStyles();
@@ -146,7 +151,7 @@ export function Home() {
                    
                  </Typography>
                   <Button
-                   onClick={handleButtonClick}
+                   onClick={hireMe}
                  sx={{
                   backgroundColor:"white",
                   color:"#008FFF"

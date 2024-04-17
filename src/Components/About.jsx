@@ -4,7 +4,7 @@ import Grid from "@mui/material/Grid";
 import { makeStyles } from "@mui/styles";
 import { Box } from "@mui/system";
 import Showcase from "../Media/showcase.svg";
-import Reveal from 'react-reveal/Reveal';
+
 
 
 const useStyles=makeStyles((theme)=>({
@@ -29,7 +29,7 @@ const useStyles=makeStyles((theme)=>({
 export function About() {
     const classes=useStyles();
     return (
-        <Reveal effect="fadeInUp">
+       
         <Box
         sx={{
             backgroundColor:"#111"
@@ -95,7 +95,7 @@ export function About() {
                    }}
                     
                     >
-                    <Typography component="h2" varient="h2"
+                    <Typography component="h2" variant="h2"
                     sx={{
                         fontSize:{
                             xs:22,
@@ -114,7 +114,7 @@ export function About() {
                     }}>Hi, I'm</Typography>
                     <Typography
                     color="white"
-                    varient='p'
+                    variant='p'
                     sx={{
                         lineHeight:{
                            xs:3,
@@ -125,7 +125,8 @@ export function About() {
                             md:35,
                             lg:"4.2rem"
                            },
-                           fontFamily:"Metal Mania",
+                           fontFamily:"Lora",
+                           fontStyle:"italic",
                            marginLeft:"1em"
                         
                     }}
@@ -150,8 +151,7 @@ export function About() {
                 </Grid>    
               </Grid>
               </Box>
-            </Box>
-             </Reveal>    
+            </Box>  
           
     )
 }

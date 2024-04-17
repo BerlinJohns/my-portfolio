@@ -7,6 +7,7 @@ import { ThemeProvider, createTheme} from '@mui/material/styles';
 import Projects from "./Components/Projects";
 import ReactGA from "react-ga4";
 import './App.css';
+import MyServices from "./Components/Services";
 
 
 
@@ -31,7 +32,7 @@ export const theme=createTheme({
       main:"#008FFF"//blue
     },
     success:{
-      main:"#C786FF"  
+      main:"#25F4E7"  
     },
     background:{
       default:"111",
@@ -45,7 +46,7 @@ export const theme=createTheme({
 
   },
   typography:{
-    fontFamily:"Poppins ,Ubunt",
+    fontFamily:"Poppins ,Ubunt,Lora",
     fontWeightLight:'400',
     fontWeightMedium:'500',
     fontWeightBold:'700',
@@ -57,11 +58,12 @@ function App() {
   return (
     
     <ThemeProvider theme={theme}>
-      <div className="scrollPath"></div>
-    <div >
+      
+    <div className="container">
         <Navbar/>
         <Home/>
         <About/>
+        <MyServices/>
         <Projects/>
         <Skills/>
         <Footer/>

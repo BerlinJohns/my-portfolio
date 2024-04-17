@@ -93,21 +93,21 @@ export function Footer() {
                  }}>
                <span style={{ display: 'flex', alignItems: 'center' }} onClick={handleEmailClick}>
                   <BsFillEnvelopeFill />
-                  <span style={{ marginLeft: '5px' }}>berlinjohns78@gmail.com</span>
+                  <span style={{ marginLeft: '5px' }}>&nbsp; berlinjohns78@gmail.com</span>
               </span>
               </Typography>
-              <Typography varient="h1" component="p" color="#C786FF" 
+              <Typography  component="p" color="#C786FF" 
               onClick={handlePhoneClick}
                sx={{
                 marginTop:2,
                 cursor:'pointer'
               }}>
-                  <BsTelephoneForward /> &nbsp; &nbsp;  +91 9629802155
+                  <BsTelephoneForward /> &nbsp;  +91 9629802155
               </Typography>
             </Grid> 
            
        </Grid>
-       <Typography varient="h3" component="p" width="100%" backgroundColor="#111" color="#616161" className={classes.heading}>
+       <Typography  component="p" width="100%" backgroundColor="#111" color="#616161" className={classes.heading}>
             Copyright © {date}
             </Typography>
        </>
