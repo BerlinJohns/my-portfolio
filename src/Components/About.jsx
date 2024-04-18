@@ -5,7 +5,7 @@ import { makeStyles } from "@mui/styles";
 import { Box } from "@mui/system";
 import Showcase from "../Media/showcase.svg";
 import { FaFileDownload } from "react-icons/fa";
-
+import ReactGA from "react-ga4";
 
 
 const useStyles=makeStyles((theme)=>({
@@ -29,6 +29,13 @@ const useStyles=makeStyles((theme)=>({
 
 export function About() {
     const classes=useStyles();
+
+    const  resumeDownload=()=>{
+        ReactGA.event({
+            category: 'Button Click',
+            action: 'Resume Downloaded',
+          });
+    }
     return (
        
         <Box
@@ -135,14 +142,20 @@ export function About() {
                    </Typography>
                
 
-                    <Button sx={{
+                    <Button
+                    onClick={resumeDownload}
+                    sx={{
                        marginY:{
                         xs:3,
                         sm:1,
-                       }
+                       },
+                       '& a': {
+                        textDecoration: 'none', // Remove text decoration for anchor tag
+                        color: 'inherit', // Inherit text color from parent (button)
+                      },
                     }} 
                     size="medium" color="success" variant="outlined" startIcon={<FaFileDownload/>} >
-                          Download Resume
+                          <a  href="https://raw.githubusercontent.com/berlinjohns/resume/main/Berlin_Johns_Resume.docx" download>Download Resume</a>
                     </Button>
                 </Grid>
                 <Grid item xs={10} sm={12} md={6} lg={5}>
