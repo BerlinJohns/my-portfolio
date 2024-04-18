@@ -1,9 +1,10 @@
 import React from "react";
-import { Typography } from "@mui/material";
+import { Typography,Button} from "@mui/material";
 import Grid from "@mui/material/Grid";
 import { makeStyles } from "@mui/styles";
 import { Box } from "@mui/system";
 import Showcase from "../Media/showcase.svg";
+import { FaFileDownload } from "react-icons/fa";
 
 
 
@@ -72,30 +73,7 @@ export function About() {
                 }}
               
                 >
-                <Typography
-                component="p"
-                color="primary"
-                sx={{
-                   fontSize:{
-                    xs:14,
-                    sm:20,
-                    md:20,
-                    lg:"1.4rem"
-                   },
-                   lineHeight:{
-                    xs:1.4,   
-                    lg:2
-                   },
-                   wordSpacing:{
-                       xs:15,
-                       sm:10,
-                       md:15,
-                       lg:10
-                   },
-                   }}
-                    
-                    >
-                    <Typography component="h2" variant="h2"
+                 <Typography color="primary" component="h2" variant="h2"
                     sx={{
                         fontSize:{
                             xs:22,
@@ -111,11 +89,14 @@ export function About() {
                            
                            }
                       
-                    }}>Hi, I'm</Typography>
+                    }}>Hi, I'm
+                    </Typography>
+                   
                     <Typography
                     color="white"
                     variant='p'
                     sx={{
+                       
                         lineHeight:{
                            xs:3,
                            },
@@ -131,17 +112,38 @@ export function About() {
                         
                     }}
                     >Berlin Johns.M </Typography>
-                    
+
                    <Typography
+                   color="primary"
                    sx={{
                     lineHeight:{
+                        xs:2,
                         sm:4
+                    },
+                    fontSize:{
+                        xs:15,
+                        sm:18,
+
+                    },
+                    textAlign:{
+                        xs:"justify",
+                        
                     }
+
                    }}>
                     I am a self-taught developer and designer who embarked on my coding journey during the lockdown period of 2020.  I am proficient at developing modern web and mobile applications, showcasing my evolving skills in both development and design.
                    </Typography>
-                  
-                    </Typography>
+               
+
+                    <Button sx={{
+                       marginY:{
+                        xs:3,
+                        sm:1,
+                       }
+                    }} 
+                    size="medium" color="success" variant="outlined" startIcon={<FaFileDownload/>} >
+                          Download Resume
+                    </Button>
                 </Grid>
                 <Grid item xs={10} sm={12} md={6} lg={5}>
                  
