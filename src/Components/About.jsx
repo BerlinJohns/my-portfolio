@@ -155,7 +155,7 @@ export function About() {
                       },
                     }} 
                     size="medium" color="success" variant="outlined" startIcon={<FaFileDownload/>} >
-                          <a  href="https://raw.githubusercontent.com/berlinjohns/resume/main/Berlin_Johns_Resume.docx" download>Download Resume</a>
+                          <a  href="https://raw.githubusercontent.com/berlinjohns/resume/main/Berlin_Johns_Resume.pdf" download>Download Resume</a>
                     </Button>
                 </Grid>
                 <Grid item xs={10} sm={12} md={6} lg={5}>
