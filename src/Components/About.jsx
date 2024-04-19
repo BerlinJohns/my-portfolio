@@ -100,7 +100,7 @@ export function About({ darkMode}) {
                     </Typography>
                    
                     <Typography
-                    color="white"
+                    color={darkMode ? "white" : "#25F4E7"}
                     variant='p'
                     sx={{
                        

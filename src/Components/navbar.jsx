@@ -89,7 +89,8 @@ export function Navbar({ darkMode, toggleDarkMode }){
       fontSize:{
          xs:14,
          md:20
-      }
+      },
+      marginRight:4,
     }}
     >
             {darkMode ? <FaMoon /> : <IoMdSunny />}
