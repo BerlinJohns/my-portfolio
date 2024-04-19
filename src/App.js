@@ -27,6 +27,10 @@ function App() {
   const [darkMode, setDarkMode] = useState(true); // State variable for dark mode
 
   const toggleDarkMode = () => {
+    ReactGA.event({
+      category: 'Button Click',
+      action: 'Toggled Theme Mode',
+    });
     setDarkMode(!darkMode); // Toggle dark mode state
   };
 
