@@ -4,9 +4,9 @@ import Icon from "../Media/log.png";
 import Typography from '@mui/material/Typography';
 import { makeStyles } from "@mui/styles";
 import { Box, } from "@mui/system";
-
-
-
+import { IconButton } from "@mui/material";
+import { FaMoon } from "react-icons/fa";
+import { IoMdSunny } from "react-icons/io";
 
 const useStyles=makeStyles((theme)=>{
  return {
@@ -37,14 +37,19 @@ const useStyles=makeStyles((theme)=>{
                       
          }
      },
+     iconButton: {
+      border:"red",
+     borderColor:"red",
+
+    },
    }
 });
-export function Navbar(){
+export function Navbar({ darkMode, toggleDarkMode }){
    const classes=useStyles();
    return (
    
    
-   <AppBar color="info"
+   <AppBar color="background"
    elevation="0"
     position="fixed"
    >
@@ -77,7 +82,20 @@ export function Navbar(){
       Stay Humble But not Simple!
     </Typography>
     </Box>
-     
+
+    
+    <IconButton color="inherit" onClick={toggleDarkMode}
+    sx={{
+      fontSize:{
+         xs:14,
+         md:20
+      }
+    }}
+    >
+            {darkMode ? <FaMoon /> : <IoMdSunny />}
+          </IconButton>
+    
+    
       </Box>
    </AppBar>
  

@@ -60,7 +60,7 @@ const hireMe = () => {
     action: 'Clicked Hire Me Button',
   });
 };
-export function Home() {
+export function Home({ darkMode, toggleDarkMode }) {
   const classes=useStyles();
   
 
@@ -70,7 +70,7 @@ export function Home() {
         
           <Box
           sx={{
-            backgroundColor:"#111",
+            backgroundColor:darkMode ? '#111':'white',
             height:{
               xs:"100vh",
               sm:"100h",
@@ -79,7 +79,7 @@ export function Home() {
             },
           }}
           >
-          <Grid container background="default" >
+          <Grid container background="background" >
               <Hidden smUp>
                 
           <Grid item 
@@ -153,8 +153,8 @@ export function Home() {
                   <Button
                    onClick={hireMe}
                  sx={{
-                  backgroundColor:"white",
-                  color:"#008FFF"
+                  backgroundColor:darkMode ? "white" :"#111",
+                  color:darkMode ? "#111" :"primary"
                  }}>
                       Hire Me
                   </Button>

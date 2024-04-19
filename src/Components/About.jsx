@@ -27,7 +27,7 @@ const useStyles=makeStyles((theme)=>({
 
 
 
-export function About() {
+export function About({ darkMode}) {
     const classes=useStyles();
 
     const  resumeDownload=()=>{
@@ -40,7 +40,7 @@ export function About() {
        
         <Box
         sx={{
-            backgroundColor:"#111"
+            backgroundColor:darkMode ? "#111" : "white"
         }}
         >
                                                                          

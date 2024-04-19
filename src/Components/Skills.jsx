@@ -73,13 +73,13 @@ const skillList=[
     icon:<SiOwasp/>
   }
 ]
-export function Skills() {
+export function Skills({darkMode}) {
     const [skills]=useState(skillList);
     const classes=useStyles();
     
     return (
         <>
-        <Box sx={{ backgroundColor:'#111'}}>
+        <Box sx={{ backgroundColor:darkMode ? "#111" : "white"}}>
           <Typography component="h1" 
           sx={{
               paddingTop:9,

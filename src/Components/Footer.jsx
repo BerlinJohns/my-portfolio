@@ -49,13 +49,13 @@ const date=new Date().getFullYear()
 
 
 
-export function Footer() {
+export function Footer({darkMode}) {
   const classes=useStyles();
     return (
       <>
         <Grid container   
           sx={{
-            backgroundColor:"#111",
+            backgroundColor:darkMode ? "#111" : "white",
             padding:"4em",
             borderTop:".1em solid gray "
            
@@ -107,7 +107,7 @@ export function Footer() {
             </Grid> 
            
        </Grid>
-       <Typography  component="p" width="100%" backgroundColor="#111" color="#616161" className={classes.heading}>
+       <Typography  component="p" width="100%" backgroundColor= {darkMode ? "#111" : "white"} color="#616161" className={classes.heading}>
             Copyright © {date}
             </Typography>
        </>

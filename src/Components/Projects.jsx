@@ -12,7 +12,7 @@ import { SiNestjs,SiTailwindcss,SiMongodb,SiExpress,SiTypescript } from "react-i
 import { FaAngular } from "react-icons/fa";
 
 
-function Projects() {
+function Projects({darkMode}) {
   const openAliya = () => {
     window.open('https://aliyaservice.netlify.app/', '_blank');
     ReactGA.event({
@@ -22,7 +22,7 @@ function Projects() {
   };
   return (
     <>
-    <Box sx={{ backgroundColor:'#111'}}>
+    <Box sx={{ backgroundColor:darkMode ? "#111" : "white" }}>
     <Typography component="h1" 
           sx={{
               paddingTop:2.5,
@@ -49,7 +49,7 @@ function Projects() {
 <Card 
 onClick={openAliya}
 sx={{ maxWidth: 345,
-    backgroundColor:'#111',
+    backgroundColor:darkMode ? "#111" : "white",
     border: 1,
     borderColor: '#008FFF'
     }}
@@ -127,7 +127,7 @@ sx={{ maxWidth: 345,
     <Grid item xs={6} md={4}>
     <Card sx={{ maxWidth: 345 ,
     
-    backgroundColor:'#111',
+    backgroundColor:darkMode ? "#111" : "white",
     border: 1,
     borderColor: '#008FFF',
     minHeight: '100%'

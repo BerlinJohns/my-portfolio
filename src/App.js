@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Navbar } from "./Components/Navbar";
 import {Home} from "./Components/Home";
 import { About } from "./Components/About";
@@ -21,52 +22,52 @@ ReactGA.send({
     });
 
     
-export const theme=createTheme({
-  
-  palette:{
-    primary:{
-      main:"#FF5EBA", //pink
-      
-    },
-    secondary:{
-      main:"#008FFF"//blue
-    },
-    success:{
-      main:"#25F4E7"  
-    },
-    background:{
-      default:"111",
-    },
-    info:{
-        main:"#111"
-    },
-   
-   
 
-
-  },
-  typography:{
-    fontFamily:"Poppins ,Ubunt,Lora",
-    fontWeightLight:'400',
-    fontWeightMedium:'500',
-    fontWeightBold:'700',
-    
-    
-  },
-})
 function App() {
+  const [darkMode, setDarkMode] = useState(true); // State variable for dark mode
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode); // Toggle dark mode state
+  };
+
+  const theme = createTheme({
+    palette: {
+      mode: darkMode ? 'dark' : 'light', // Toggle between dark and light mode
+      primary: {
+        main: '#FF5EBA', // Pink
+      },
+      secondary: {
+        main: '#008FFF', // Blue
+      },
+      success: {
+        main: '#25F4E7',
+      },
+      background: {
+        default: darkMode ? '#111' : '#fff', // Toggle background color based on mode
+      },
+      info: {
+        main: '#111', // Info color
+      },
+    },
+    typography: {
+      fontFamily: 'Poppins, Ubuntu, Lora',
+      fontWeightLight: 400,
+      fontWeightMedium: 500,
+      fontWeightBold: 700,
+    },
+  });
   return (
     
     <ThemeProvider theme={theme}>
       
-    <div className="container">
-        <Navbar/>
-        <Home/>
-        <About/>
-        <MyServices/>
-        <Projects/>
-        <Skills/>
-        <Footer/>
+    <div  className="container">
+        <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+        <Home darkMode={darkMode} />
+        <About darkMode={darkMode} />
+        <MyServices darkMode={darkMode}/>
+        <Projects darkMode={darkMode} />
+        <Skills darkMode={darkMode}/>
+        <Footer darkMode={darkMode}/>
       </div>
    
    </ThemeProvider>

@@ -1,13 +1,13 @@
 import React from 'react';
 import { makeStyles } from '@mui/styles';
-import { Container, Card, CardContent, Grid, Typography } from '@mui/material';
+import { Container, Card, CardContent, Grid, Typography,Box } from '@mui/material';
 import { FiCode, FiSmartphone, FiShield } from 'react-icons/fi';
 import { GiPaintBrush } from "react-icons/gi";
 const useStyles = makeStyles((theme) => ({
   section: {
     paddingTop: theme.spacing(6),
     paddingBottom: theme.spacing(6),
-    backgroundColor: "#111"
+    
   },
   card: {
     display: 'flex',
@@ -42,12 +42,16 @@ const servicesData = [
   },
 ];
 
-const MyServices = () => {
+const MyServices = ({darkMode}) => {
   const classes = useStyles();
 
   return (
-    <section className={classes.section}>
-      <Container maxWidth="lg">
+    <Box sx={{
+      backgroundColor: darkMode ? "#111" : "white"
+    }} className={classes.section}>
+      <Container 
+     
+      maxWidth="lg">
         <Typography
             sx={{
               paddingTop:2.5,
@@ -99,7 +103,7 @@ const MyServices = () => {
           ))}
         </Grid>
       </Container>
-    </section>
+    </Box>
   );
 };
 
