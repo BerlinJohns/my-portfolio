@@ -42,6 +42,7 @@ const useStyles=makeStyles((theme)=>{
      borderColor:"red",
 
     },
+   
    }
 });
 export function Navbar({ darkMode, toggleDarkMode }){
@@ -49,7 +50,8 @@ export function Navbar({ darkMode, toggleDarkMode }){
    return (
    
    
-   <AppBar color="background"
+   <AppBar 
+   color="background"
    elevation="0"
     position="fixed"
    >
@@ -93,7 +95,7 @@ export function Navbar({ darkMode, toggleDarkMode }){
       marginRight:4,
     }}
     >
-            {darkMode ? <FaMoon /> : <IoMdSunny />}
+            {darkMode ? <FaMoon style={{ color: '#F5EE00' }} /> : <IoMdSunny style={{ color: '#F5EE00' }} />}
           </IconButton>
     
     

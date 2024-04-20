@@ -126,6 +126,8 @@ export function Home({ darkMode, toggleDarkMode }) {
                 
                  <Typography component="h1"
                  sx={{
+
+        
                    
                   fontSize:{
                     xs:'1.9rem',
@@ -147,7 +149,7 @@ export function Home({ darkMode, toggleDarkMode }) {
                  }}
                  className={classes.title}
                  >
-                   As a web designer and developer, I craft online assets for your business.
+                   As a Software  Engineer  and Designer, I craft online assets for your business.
                    
                  </Typography>
                   <Button
