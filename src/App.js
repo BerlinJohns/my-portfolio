@@ -70,7 +70,7 @@ function App() {
       <Router>
       <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <Switch >
-          <Route path="/" exact>
+          <Route path="/my-portfolio" exact>
           <Home darkMode={darkMode} />
             <About darkMode={darkMode} />
             <MyServices darkMode={darkMode}/>
