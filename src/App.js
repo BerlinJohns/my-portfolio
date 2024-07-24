@@ -77,7 +77,7 @@ function App() {
             <Projects darkMode={darkMode} />
             <Skills darkMode={darkMode}/>
           </Route>
-           <Route path="/petszone">
+           <Route path="/my-portfolio/petszone">
             <Petszone darkMode={darkMode}/>
            </Route>
         </Switch>
