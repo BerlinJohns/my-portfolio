@@ -67,17 +67,17 @@ function App() {
     <ThemeProvider theme={theme}>
       
     <div  className="container">
-      <Router>
+      <Router basename="/my-portfolio">
       <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <Switch >
-          <Route path="/my-portfolio" exact>
+          <Route path="/" exact>
           <Home darkMode={darkMode} />
             <About darkMode={darkMode} />
             <MyServices darkMode={darkMode}/>
             <Projects darkMode={darkMode} />
             <Skills darkMode={darkMode}/>
           </Route>
-           <Route path="/my-portfolio/petszone">
+           <Route path="/petszone">
             <Petszone darkMode={darkMode}/>
            </Route>
         </Switch>
