@@ -133,7 +133,7 @@ sx={{ maxWidth: 345,
     borderColor: '#008FFF',
     minHeight: '100%'
     }}>
-       <Link to="/my-portfolio/petszone" style={{ textDecoration: 'none' }}>
+       <Link to="/petszone" style={{ textDecoration: 'none' }}>
       <CardActionArea>
         <CardMedia
           component="img"
@@ -161,9 +161,7 @@ sx={{ maxWidth: 345,
             }
           }}
           >
-           A full-fledged e-commerce site
-            
-      
+           A full-fledged E-commerce
           </Typography>
              <Typography variant='h6'
          

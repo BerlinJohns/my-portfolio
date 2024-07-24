@@ -61,7 +61,7 @@ export function Navbar({ darkMode, toggleDarkMode }){
       }}>
     
    <div className={classes.wrapper}>
-  <Link to="/" style={{ textDecoration: 'none' }} >
+  <Link to="/my-portfolio" style={{ textDecoration: 'none' }} >
   <img src={Icon} alt="Logo" className={classes.logo}/>
   </Link>
    </div>
