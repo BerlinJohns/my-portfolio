@@ -7,6 +7,7 @@ import { Box, } from "@mui/system";
 import { IconButton } from "@mui/material";
 import { FaMoon } from "react-icons/fa";
 import { IoMdSunny } from "react-icons/io";
+import { Link } from 'react-router-dom';
 
 const useStyles=makeStyles((theme)=>{
  return {
@@ -60,7 +61,9 @@ export function Navbar({ darkMode, toggleDarkMode }){
       }}>
     
    <div className={classes.wrapper}>
-   <img src={Icon} alt="Logo" className={classes.logo}/>
+  <Link to="/" style={{ textDecoration: 'none' }} >
+  <img src={Icon} alt="Logo" className={classes.logo}/>
+  </Link>
    </div>
     <Box sx={{
        display:'flex',

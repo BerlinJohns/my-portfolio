@@ -7,6 +7,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Grid from '@mui/material/Grid';
 import ReactGA from "react-ga4";
+import { Link } from 'react-router-dom';
 
 import { SiNestjs,SiTailwindcss,SiMongodb,SiExpress,SiTypescript } from "react-icons/si";
 import { FaAngular } from "react-icons/fa";
@@ -132,12 +133,13 @@ sx={{ maxWidth: 345,
     borderColor: '#008FFF',
     minHeight: '100%'
     }}>
+       <Link to="/petszone" style={{ textDecoration: 'none' }}>
       <CardActionArea>
         <CardMedia
           component="img"
           height="150"
           image="https://ucarecdn.com/398127ea-ef87-48b8-b877-b3fc7416aab1/-/preview/1000x491/"
-          alt="deploy soon...."
+          alt="Petszone"
         />
         <CardContent >
           <Typography gutterBottom variant="h5" component="div"
@@ -159,7 +161,7 @@ sx={{ maxWidth: 345,
             }
           }}
           >
-            Under Construction..
+           A full-fledged e-commerce site
             
       
           </Typography>
@@ -202,6 +204,7 @@ sx={{ maxWidth: 345,
          </Typography>
         </CardContent>
       </CardActionArea>
+      </Link>
     </Card>
     </Grid>
 

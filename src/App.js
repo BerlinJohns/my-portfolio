@@ -1,15 +1,17 @@
 import { useState } from "react";
-import { Navbar } from "./Components/Navbar";
+import { Navbar } from "./Components/navbar";
 import {Home} from "./Components/Home";
 import { About } from "./Components/About";
 import {Footer} from "./Components/Footer";
 import {Skills} from "./Components/Skills";
+import Petszone from "./Components/Petszone";
 import { ThemeProvider, createTheme} from '@mui/material/styles';
 import Projects from "./Components/Projects";
 import ReactGA from "react-ga4";
 import './App.css';
 import MyServices from "./Components/Services";
 
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
 
@@ -65,13 +67,22 @@ function App() {
     <ThemeProvider theme={theme}>
       
     <div  className="container">
-        <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-        <Home darkMode={darkMode} />
-        <About darkMode={darkMode} />
-        <MyServices darkMode={darkMode}/>
-        <Projects darkMode={darkMode} />
-        <Skills darkMode={darkMode}/>
+      <Router>
+      <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+        <Switch >
+          <Route path="/" exact>
+          <Home darkMode={darkMode} />
+            <About darkMode={darkMode} />
+            <MyServices darkMode={darkMode}/>
+            <Projects darkMode={darkMode} />
+            <Skills darkMode={darkMode}/>
+          </Route>
+           <Route path="/petszone">
+            <Petszone darkMode={darkMode}/>
+           </Route>
+        </Switch>
         <Footer darkMode={darkMode}/>
+      </Router>
       </div>
    
    </ThemeProvider>
